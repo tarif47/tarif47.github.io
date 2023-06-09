@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zuhair.tech/sitemap.xml

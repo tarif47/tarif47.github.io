@@ -1,189 +1,965 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Zuhair Ahmed is a Computer Science student with a passion for Artificial Intelligence, Full Stack Development, and Data Analysis. He is proficient in Python, Java, .net and C++, and has experience with a variety of frameworks and tools. Zuhair is also a skilled data analyst, with experience in using statistical software to analyze and interpret data.">
+  <meta name="author" content="Zuhair Ahmed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Zuhair, tech, technology, developer, innovation, articles, projects, insights">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Zuhair - Tech Enthusiast, Developer, and Innovator">
+  <meta property="og:description" content="Welcome to the website of Zuhair - Tech Enthusiast, Developer, and Innovator. Explore the latest articles, projects, and insights on technology.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/95162538?v=4">
+  <meta property="og:url" content="https://zuhair.tech">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Zuhair - Tech Enthusiast, Developer, and Innovator">
+  <meta property="twitter:title" content="Zuhair - Tech Enthusiast, Developer, and Innovator">
+  <meta property="twitter:description" content="Welcome to the website of Zuhair - Tech Enthusiast, Developer, and Innovator. Explore the latest articles, projects, and insights on technology.">
+  <meta property="twitter:image" content="https://pbs.twimg.com/profile_images/1435188688091172867/XtDOzmok_400x400.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <title>Portfolio</title>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" type="image/png" href="favicon.png">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo1.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          
+          <img src="./assets/images/my-avatar.png" alt="Zuhair Ahmed" width="80">
+          
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Zuhair Ahmed">Zuhair Ahmed</h1>
+
+          <p class="title">CS Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:email@zuhair.tech" class="contact-link">email@zuhair.tech</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="man-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Gender</p>
+
+              <a href="https://www.youtube.com/watch?v=OVh0bMNSFss" class="contact-link">Male</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 06</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dhaka, Bangladesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/ZuhairTarif" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/zuhairtarif/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          
+
+          <li class="social-item">
+            <a href="https://zuhairtarif.blogspot.com/" target="_blank" class="social-link">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
 
 
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Zuhair Ahmed</a>
-                </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Works</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Chatbot</button>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      
+        
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Zuhair Ahmed</span><br>Computer Science Engineer</h1>
+        <section class="about-text">
+          <p>
+            Inspired, persistent, dynamic software developer. Highly motivated to learn and work under pressure. Proficient in leadership skills and passionate about implementing ideas and developing skills with a reputed organization.
+          </p>
 
-                    <a href="https://zuhair.is-a.dev/hello" class="button">Contact</a>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <!--  icons8.com,  color: #ffd06b -->
+              <div class="service-icon-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0klEQVR4nO2Zv2sUQRTHJwFFCAgWiagkdjaCPzpLbQRRRLSyEgXj7Xu5NCkSYhFQyJ8QbAQRLNUQO9EYDULUy827O0XRQjQqtooXUKJfmdkxdyaXZO9XdjbcF6aaeTPvM/Pe29ldpVraoILwJIRRf6MXkFRXnCDPGwPCgOZCbDBmYWh+45yZxPtzW6qeI5vuhKZ8CEOvkend0Rxv13Ik098DoQ9uVyeQ6d2UXBjhPdD01cX7LWCkPbkwmu6VxftYHaFaiC1nIMFpt/h3CM27XR1NFAxm0lsh/MmFVQAdHIWmn86RwZrmzMYQZhC+5pye+ZcbED4D4QVo/gPhlPcwyKUOQdNvewKa9v7Xp/m8BTH9OTrrNQyEtTuNKxX7NQ+6AvALwieanjPI92+H8DiEi5Gewtl0Z7gIPXO79RAvRzZXhqFRlz/z0Hy4qTAQulvddYIuWrtC0A2hz26Bm4BqqwzDYw27ykiYjyuAuJMoBN1V75amA2HZtYtcrTgGI+3QfN3mS2NAHqwEYgdUC1GCCY4sltxsQLXOs5o/kXysFyScgy64eRaQ45OJBTEy1av0hE8fVIkFgWqD0A033xfM0u5EghiZazyE7ruS+wr5YJtKIkjp/kVSb3VScYOUnjH8rvYSS0+8AGm00AKJUfApR+oRWiDSOpGmCLVubBJOZEOAQAfH7ZcaTXPI9R2LbOgfCM2VvVR9jGzoHYiUX3XobWRD/0BoqAxkaE1D35pa9G+gw4aXDbGBjsSCGEH3nTJNrSbfQyuyGgUC4afQPJ18EM3TS1+I1hukaI0z/T0qZsH+yrNviD+qNxa6E3diY2nTfLsGkFSXg4n2Ebu5rWgg1vW3G/SlXeHi9G15n/sePMs7le+C5stuF8cr9E3YvhwNK18FcxIhhPmBs4B8sG/ZmGzffttnxuRo2NgonwTNj+uI/ynliyA8VTsIPYrb/5ZUE/UXY2qodU6tu5gAAAAASUVORK5CYII=
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+
+                <p class="service-item-text">
+                  State-of-the-art Ai tools used at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="data:image/png;base64,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" 
+                alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Product Knowledge</h4>
+
+                <p class="service-item-text">
+                  High-quality development of products at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABAUlEQVR4nO2VwQ3CMAxFfYaBugKIPZBwuLEKgn3giuSwQssJ1Bk+AipxaKFqCGnS+km+JGrrF9sNkaIoSpLAbqYQ3kO4hDWIOoRLiNnhtJzURR4bfSdouwZvGypibtVmRpEDy1mV67Vh82VJiYBP+foQ+XcrkYsIZLWANRcIFziv523rEYtw8f5LmLxt/evLfwQqQkSPtnmevpgclmdt69G2lguDEQkJRiOCxIIGL0KJABVJuSIIeB+4PkejFCFPuH4DKjLUiiDAjKhILDd7kIqEQFvLjnnYyRMqYrUi4WfE22xhyCIxAxVJrSJILKgmIubYd1LoGsKHQA2gKIpCfrkDPOFyzc6xIu0AAAAASUVORK5CYII=" 
+                alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">FullStack Development</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for Web.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiElEQVR4nO1ZS2tTURC+3SoIIq1WN7aCbly4UvD1A1R0oVAFH4jQNjM3PvBBpaIrXfjYiYIbCz5AXPjGhYhVECzWzCQKrly49LGpqFStfnLOvclt2jSve9okkA/uJsn95nxn5szMmXheE03UF5DZPx/Ce6E0AKXXUP4CoV8Q+g7hD1B+CeUrUN6KTGKuV29A2l8H4ftQ+gNllPmMQfkWhFbUev0eMolOKD+MFmeFDEL5iBWnvBR6eDaGu2dB/Q6kEqsh/jEoPYHQqH1H+B+U72K4u702ItK0A8LfQgE/IXQOqWRr2e8Pd7dD+SyURkKOz0jz5uld9QRA6MQ4L9zBG17oVQm8owVQfhR5h/ZXy1WtCBPjxwGvJTYnvBak+QCE/oahlozLWTqcop3b5TmGzXiRmE2u+aODHZ2JPm+aAKFD4WZ9gva2uTeQzU5C95yTTwyznC2+7ZY8SKVBdlK/Y8rfaW+bi10MCqstov+gvcvj8kXEttjZHTpdVITwW/u4EGPSebB51+JyRbtjCp3ZHelZXFRENiU7EJOzq/wbr5Jz4nAFhLZ3sgscLCki5xFHYpSeWa4UbYnDkyUbCA/50ZIiwjPiSgyUDofhdTG+EOHhcFc25H2eSrZCKBOKfG8q9JTf1aqPGg/bipsFZRKd0Weld92lZ5zA3iemasUneGLSu1V4Ju+dKh6vYiElRFQjJq4IFBVSILQqRV2EIrKHXRIbY/EU8UyxxOEMxdJv5VyVpetc+hW67K4gCj+PTVZhAQ2vzYD6XW5blCINY0WcZbQ0wc3R2KVRDPE8F3ZN5roXuviME8IymkwInw+r+g1XNk2srs218TGyV7ltv/VGto0Xf6UrewG50IMwDO47JS58scoOI266N2DmUtmrrnC/cwOTM9VXSM+iaTLC2wN3m4Of2O2e39837cOHguMg4X5n4yDhg6GAcNTkIOWWJSZr1GS0GCFghnsQfjy5bzK3w5kQo37XhJHpBVNzyn5fehbZFBtxjEwegs+cmI7cYCIXbvTCDqrTtB7p3mV2iG2et8klQRqnPgg9zeuqhW8Gs2C/q2ZiDCD+mrBo/i675Q6EXIfSKm8cai4mV+BSvAfKV/P+6FH+AaWPUBqC8CWb/YpM7utCjCsgTdsK/HE0BvF3eo2Gpph6BZphVqdA0zN1ChSsM3zSa0QgL8zolNfIgPVMg3qiCa+B8R+X7RePvryISAAAAABJRU5ErkJggg==" 
+                alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  I analyse, manage and preprocess data of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Md. Forhadul Islam</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Zuhair was hired for the deployment process of https://www.lookoidbd.com/ and did it successfully. With a minimum amount of time, the website was fully functional on the internet. Very satisfied with his service.
+                  </p>
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/zuhairtarif" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    
-                    <a href="https://github.com/ZuhairTarif" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nabila Chowdhury</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I hired Zuhair for a project in Database. That design was so clear that the backend developer was pleased. It was all done because of the hard work of him. He can design any complex database with a bare minimum amount of time.
+                  </p>
                 </div>
 
-               
-            </section>
+              </div>
+            </li>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">About Me</h2>
-                        <p class="about__text">Inspired, persistent, dynamic software developer. Highly motivated to learn and work under pressure. Proficient in leadership skills and passionate about implementing ideas and developing skills with a reputed organization.</p>           
-                    </div>                                   
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tanima Islam</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had a client and he needs work in OpenGL. I recommended him to Zuhair. The client was very satisfied with his service and ready to give if there is any project only to Zuhair. Keep up the good work, Zuhair.
+                  </p>
                 </div>
-            </section>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+              </div>
+            </li>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Machine Learning. Database. HCI. Project Development. </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-.Net skills__icon'></i>
-                                <span class="skills__name">.Net</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-hacking skills__icon' ></i>
-                                <span class="skills__name">Ethical Hacking</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-ui skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sazzad Hossain</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I work with Zuhair on a project that was from Swinburne University, Australia. Not to mention he was really helpful and we did the project successfully.
+                  </p>
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+              </div>
+            </li>
 
-                <div class="work__container bd-grid">
-                    <a href="https://github.com/ZuhairTarif/ZeroHunger" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="https://www.aiub.edu/" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="https://youtu.be/zsSUkoif7ww" class="work__img">
-                        <img src="assets/img/work6.png" alt="">
-                    </a>
-                    
-                </div>
-            </section>
+          </ul>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Get In Touch</h2>
+        </section>
 
-                <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/tarif4667@gmail.com" class="contact__form" method="POST">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="message" id="" cols="0" rows="10" class="contact__input" placeholder="Write Anything!!"></textarea>
-                        <button name="submit" type="submit" class="contact__button button">Send Message</button>
-                    </form>
-                </div>
-            </section>
-        </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Connect</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/zuhairtarif/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                
-                <a href="https://www.twitter.com/zuhairtarif/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-            <p class="footer__copy">&#169; Zuhair <script>document.write( new Date().getFullYear() );</script> All Rights Reserved</p>
-        </footer>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Md. Forhadul Islam</h4>
+
+              
+
+              <div data-modal-text>
+                <p>
+                  Zuhair was hired for the deployment process of https://www.lookoidbd.com/ and did it successfully. With a minimum amount of time, the website was fully functional on the internet. Very satisfied with his service.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">American International University Bangladesh</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Bachelor in Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dhaka College</h4>
+
+              <span>2017 — 2019</span>
+
+              <p class="timeline-text">
+                Higher Secondary Certificate
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ideal School and College</h4>
+
+              <span>2007 — 2017</span>
+
+              <p class="timeline-text">
+                Secondary School Certificate
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HR</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Gao Group of Companies-
+                United States
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Debator</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                AIUB Oratory Club-
+                Bangladesh
+              </p>
+
+            </li>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Participant</h4>
+
+            <span>2020</span>
+
+            <p class="timeline-text">
+              Dhaka Khichuri Challenge
+            </p>
+
+          </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">.NET</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Ui/Ux</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Ethical Hacking</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="works" data-page="works">
+
+        <header>
+          <h2 class="h2 article-title">Works</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ZuhairTarif/Buet_Hackathon2022" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projec-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BUET Hackathon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ZuhairTarif/ZeroHunger" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ZeroHunger</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.youtube.com/watch?v=zsSUkoif7ww&feature=youtu.be" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/work6.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GalaxyGems</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/ZuhairTarif/GestureController" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gesture-Controller</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/ZuhairTarif/Design-Graphics" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Design-Graphics</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/ZuhairTarif/SentinelForce" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SentinelForce</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ZuhairTarif/MoveloCity" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MoveloCity</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/ZuhairTarif/JusticeLink" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projec-5.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JusticeLink</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/ZuhairTarif/ClickCart" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projec-7.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ClickCart</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <article class="chatbot" data-page="chatbot">
+        <div id="container" class="container">
+          <div id="chat" class="chat">
+            <div id="messages" class="messages"></div>
+            <input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+            
+          </div>
+
+          <img src="bot.png" alt="Robot cartoon" height="400vh">
+        </div>
+        
+        </article>
+        
+     
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.13673771221!2d90.41928169999998!3d23.780636450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1685576589391!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/tarif4667@gmail.com" class="form" data-form method="post">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src="index.js" ></script>
+<script type="text/javascript" src="constants.js" ></script>
+<script type="text/javascript" src="speech.js" ></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
